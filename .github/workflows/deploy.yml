@@ -33,6 +33,11 @@ jobs:
 
       - name: Build
         run: npm run build
+      
+      - name: Check exported files
+        run: |
+          ls -la out
+          test -f out/index.html
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
