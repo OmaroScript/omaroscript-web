@@ -19,10 +19,10 @@ export default function Hero() {
             Disponible para Proyectos
           </span>
           <h1 className="font-headline text-5xl lg:text-7xl font-extrabold text-on-surface leading-[1.1] tracking-tight mb-8">
-            Desarrollador <span className="text-primary">Frontend</span> Mobile Senior
+            Desarrollador <span className="text-primary">Mobile & Frontend</span> Senior
           </h1>
           <p className="text-xl text-on-surface-variant max-w-2xl mb-10 leading-relaxed">
-            Experto en <span className="font-semibold text-on-surface">React Native & TypeScript</span>. Con más de 7 años de experiencia total y más de 4 años especializándome en aplicaciones bancarias y logísticas complejas.
+            Especialista en <span className="font-semibold text-on-surface">React Native, Android nativo (Kotlin) e iOS nativo (Swift)</span>. Con más de 8 años de experiencia en aplicaciones bancarias, logísticas y proyectos freelance de sitios web y tiendas online.
           </p>
           <div className="flex flex-wrap gap-4">
             <a

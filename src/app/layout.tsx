@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Manrope, Inter } from "next/font/google";
 import "./globals.css";
+import WhatsAppButton from "@/components/WhatsAppButton";
 
 const manrope = Manrope({
   subsets: ["latin"],
@@ -31,6 +32,7 @@ export default function RootLayout({
       </head>
       <body className={`${manrope.variable} ${inter.variable} font-body antialiased bg-[#f5f6f7] text-[#2c2f30]`}>
         {children}
+        <WhatsAppButton />
       </body>
     </html>
   );
