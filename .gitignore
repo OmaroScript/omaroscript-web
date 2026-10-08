@@ -7,4 +7,6 @@ coverage/
 .env*
 !.env.example
 .next
-outtsconfig.tsbuildinfo
+out
+tsconfig.tsbuildinfo
+
