@@ -3,13 +3,16 @@
 import { motion } from "framer-motion";
 
 const logos = [
-  "WALMART MÉXICO",
   "BBVA MÉXICO",
+  "JAAK",
+  "WALMART MÉXICO",
   "PINIT",
   "PEPSICO",
   "SKANDIA",
   "LENNKEN GROUP",
   "INTER MX",
+  "KODE IT",
+  "MKT TRUST",
 ];
 
 export default function LogoCarousel() {

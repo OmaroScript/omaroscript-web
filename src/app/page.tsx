@@ -45,7 +45,7 @@ export default function Page() {
               Senior
             </div>
             <div className="text-sm font-label text-on-surface-variant uppercase tracking-wider">
-              React Developer
+              Mobile & Frontend
             </div>
           </div>
         </div>
@@ -54,7 +54,7 @@ export default function Page() {
       <Skills />
       <Experience />
 
-      <section className="px-8 py-24 max-w-7xl mx-auto">
+      <section className="px-8 py-24 max-w-7xl mx-auto" id="education">
         <div className="grid md:grid-cols-2 gap-12">
           <div>
             <h2 className="font-headline text-3xl font-extrabold text-on-surface mb-10">
@@ -66,8 +66,9 @@ export default function Page() {
                   <span className="material-symbols-outlined">school</span>
                 </div>
                 <div>
-                  <h4 className="font-bold text-lg">Ingeniería en Sistemas</h4>
-                  <p className="text-on-surface-variant">UTEL Universidad</p>
+                  <h4 className="font-bold text-lg">Ingeniería en Sistemas Computacionales</h4>
+                  <p className="text-on-surface-variant">UTEL Universidad · CDMX · Feb. 2024</p>
+                  <p className="text-sm text-on-surface-variant/80">En proceso de titulación</p>
                 </div>
               </div>
               <div className="flex gap-6">
@@ -79,7 +80,24 @@ export default function Page() {
                     TSU en Tecnologías de la Información
                   </h4>
                   <p className="text-on-surface-variant">
-                    Universidad Tecnológica de Nezahualcóyotl (UTN)
+                    Universidad Tecnológica de Nezahualcóyotl (UTN) · Agto. 2019
+                  </p>
+                  <p className="text-sm text-on-surface-variant/80">
+                    En Sistemas Informáticos · Concluida como carrera técnica
+                  </p>
+                </div>
+              </div>
+              <div className="flex gap-6">
+                <div className="flex-shrink-0 w-12 h-12 bg-surface-container-highest rounded-xl flex items-center justify-center">
+                  <span className="material-symbols-outlined">query_stats</span>
+                </div>
+                <div>
+                  <h4 className="font-bold text-lg">Data Science Professional</h4>
+                  <p className="text-on-surface-variant">
+                    Big Data Academy · Perú · Jul. 2022
+                  </p>
+                  <p className="text-sm text-on-surface-variant/80">
+                    Curso de especialización
                   </p>
                 </div>
               </div>

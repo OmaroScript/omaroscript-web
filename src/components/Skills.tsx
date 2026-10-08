@@ -1,15 +1,38 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Smartphone, Globe, Code, Cloud, Terminal, Layers, AppWindow, ShoppingCart } from "lucide-react";
+import { Smartphone, Globe, Code, Cloud, Terminal, Layers, AppWindow, ShoppingCart, Plug, Component, Database, BarChart3 } from "lucide-react";
 
 const skills = [
-  { name: "React Native", icon: Smartphone },
-  { name: "Android Nativo", icon: Layers },
-  { name: "iOS Nativo", icon: AppWindow },
   { name: "React / Next.js", icon: Globe },
-  { name: "TypeScript", icon: Code },
-  { name: "Firebase", icon: Cloud },
+  { name: "React Native", icon: Smartphone },
+  { name: "Swift / Kotlin", icon: Layers },
+  { name: "Angular / Ionic", icon: AppWindow },
+  { name: "Cordova / Capacitor", icon: Plug },
+  { name: "Polymer / Lit", icon: Component },
+];
+
+const skillGroups = [
+  {
+    title: "Mobile / Híbrido",
+    icon: Smartphone,
+    items: ["React Native", "Swift", "Kotlin", "Ionic Framework", "Ionic/Angular", "Cordova", "Capacitor", "Flutter"],
+  },
+  {
+    title: "Frontend",
+    icon: Globe,
+    items: ["React JS", "Angular", "Polymer", "Lit Element", "Vue", "JavaScript", "TypeScript", "Hooks", "Redux"],
+  },
+  {
+    title: "Backend",
+    icon: Database,
+    items: ["PHP", "Laravel", "Codeigniter", "Node.js", "Express", "Nest", ".NET", "C#", "MySQL", "PostgreSQL", "SQL Server"],
+  },
+  {
+    title: "Data",
+    icon: BarChart3,
+    items: ["Spark", "Hadoop", "MongoDB", "Python", "scikit-learn", "NumPy", "pandas", "Matplotlib"],
+  },
 ];
 
 export default function Skills() {
@@ -43,13 +66,15 @@ export default function Skills() {
             </div>
             <h3 className="text-2xl font-headline font-bold mb-4">Especialista en Desarrollo Móvil</h3>
             <p className="text-on-surface-variant leading-relaxed mb-6">
-              Desarrollo móvil multiplataforma e 100% nativo. Construyo apps con React Native, Android nativo en Kotlin y iOS nativo en Swift — eligiendo la tecnología correcta según el proyecto y el contexto del negocio.
+              Apps móviles multiplataforma, nativas e híbridas. Construyo con React Native, Android nativo en Kotlin e iOS nativo en Swift, además de apps híbridas con Angular, Ionic y Capacitor — eligiendo la tecnología correcta según el proyecto y el contexto del negocio.
             </p>
           </div>
           <div className="flex flex-wrap gap-2">
             <span className="px-3 py-1 bg-surface-container-high rounded-full text-xs font-bold text-on-surface">React Native</span>
             <span className="px-3 py-1 bg-surface-container-high rounded-full text-xs font-bold text-on-surface">Kotlin / Jetpack Compose</span>
             <span className="px-3 py-1 bg-surface-container-high rounded-full text-xs font-bold text-on-surface">Swift / SwiftUI</span>
+            <span className="px-3 py-1 bg-surface-container-high rounded-full text-xs font-bold text-on-surface">Angular / Ionic</span>
+            <span className="px-3 py-1 bg-surface-container-high rounded-full text-xs font-bold text-on-surface">Cordova / Capacitor</span>
             <span className="px-3 py-1 bg-surface-container-high rounded-full text-xs font-bold text-on-surface">Reanimated</span>
           </div>
         </div>
@@ -93,6 +118,26 @@ export default function Skills() {
           <h4 className="font-bold text-lg mb-2">Proyectos Freelance</h4>
           <p className="text-sm opacity-80">Páginas web, tiendas online y landing pages. Del diseño al deploy, entregando productos listos para producción.</p>
         </div>
+      </div>
+
+      <div className="grid md:grid-cols-2 gap-6 mt-16">
+        {skillGroups.map((group) => (
+          <div key={group.title} className="p-8 bg-surface-container-lowest rounded-2xl border border-on-surface-variant/10">
+            <div className="flex items-center gap-3 mb-5">
+              <div className="w-10 h-10 rounded-xl bg-primary/5 flex items-center justify-center text-primary">
+                <group.icon size={20} />
+              </div>
+              <h4 className="font-bold text-lg">{group.title}</h4>
+            </div>
+            <div className="flex flex-wrap gap-2">
+              {group.items.map((item) => (
+                <span key={item} className="px-3 py-1 bg-surface-container-high rounded-full text-xs font-bold text-on-surface">
+                  {item}
+                </span>
+              ))}
+            </div>
+          </div>
+        ))}
       </div>
     </section>
   );

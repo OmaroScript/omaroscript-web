@@ -24,6 +24,8 @@ export default function Navbar() {
           <a className="text-primary after:content-[''] after:block after:w-1 after:h-1 after:bg-primary after:mx-auto after:rounded-full" href="#home">Inicio</a>
           <a className="text-on-surface-variant hover:text-primary transition-colors" href="#skills">Habilidades</a>
           <a className="text-on-surface-variant hover:text-primary transition-colors" href="#experience">Experiencia</a>
+          <a className="text-on-surface-variant hover:text-primary transition-colors" href="#projects">Proyectos</a>
+          <a className="text-on-surface-variant hover:text-primary transition-colors" href="#education">Educación</a>
           <a className="text-on-surface-variant hover:text-primary transition-colors" href="#contact">Contacto</a>
         </div>
         <a 

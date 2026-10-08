@@ -17,7 +17,7 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   title: "Omar Hernández | Desarrollador Senior Mobile & Frontend",
-  description: "Desarrollador Senior Mobile & Frontend especializado en React Native, TypeScript y aplicaciones de alto rendimiento.",
+  description: "Desarrollador Senior Mobile & Frontend especializado en React, React Native, TypeScript y aplicaciones móviles nativas e híbridas.",
 };
 
 export default function RootLayout({
